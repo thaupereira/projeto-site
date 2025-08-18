@@ -1,17 +1,44 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: georgia, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+.title-container{
+    text-align: center;
+    align-items: center;
 }
 
 body{
-    background-color: rgb(204, 157, 248);
+    background-color: white;
 
 }
 
 main{
-    background-color: white;
-    width: 500px;
-    margin: auto;
+    background-color: rgb(43, 1, 44);
+    width: 1000;
+    margin: 10;
     padding: 10px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.445);
+    box-shadow: 3px 3px 5px white;
+}
+
+
+/*animação de queda*/
+@keyframes fall{
+    from{
+        opacity: 0;
+        transform: translateY(-100);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*aplica a animação no titulo */
+header h1:first-child{
+    animation: fall 1.5s ease forwards;
+}
+
+header h1:last-child{
+    animation: fall 3.8s ease forwards;
+    animation-delay: 1.2; /* começa um pouco depois */
 }
