@@ -5,23 +5,13 @@
 
 .title-container{
     text-align: center;
-    align-items: center;
+
 }
 
 body{
-    background-color: white;
+    background-color: rgb(28, 2, 43);
 
 }
-
-main{
-    background-color: rgb(43, 1, 44);
-    width: 1000;
-    margin: 10;
-    padding: 10px;
-    box-shadow: 3px 3px 5px white;
-}
-
-
 /*animação de queda*/
 @keyframes fall{
     from{
@@ -38,7 +28,7 @@ header h1:first-child{
     animation: fall 1.5s ease forwards;
 }
 
-header h1:last-child{
+header h2:last-child{
     animation: fall 3.8s ease forwards;
     animation-delay: 1.2; /* começa um pouco depois */
 }
