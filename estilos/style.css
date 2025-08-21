@@ -5,10 +5,11 @@
 
 .title-container{
     text-align: center;
-
 }
 
 body{
+    margin: 0;
+    height: 100vh;
     background-color: rgb(28, 2, 43);
 
 }
@@ -31,4 +32,12 @@ header h1:first-child{
 header h2:last-child{
     animation: fall 3.8s ease forwards;
     animation-delay: 1.2; /* começa um pouco depois */
+}
+.profile-pic{
+width: 150px;
+height: 150px;
+border-radius: 50%;
+object-fit: cover;
+border: 3px solid white;
+
 }
